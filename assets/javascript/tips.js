@@ -15,6 +15,7 @@ $(document).ready(function () {
             return
         }
         var result = parseFloat((billAmount * (tipPercentage / 100))).toFixed(2);
+        $("#tipPercent").text(tipPercentage);
         $("#tipAmount").text(result);
         var totalBill = parseFloat(+billAmount + +result).toFixed(2);
         $("#billTotal").text(totalBill);
@@ -31,6 +32,7 @@ $(document).ready(function () {
             return
         }
         var result = parseFloat((billAmount * .1)).toFixed(2);
+        $("#tipPercent").text("10");
         $("#tipAmount").text(result);
         var totalBill = parseFloat(+billAmount + +result).toFixed(2);
         $("#billTotal").text(totalBill);
@@ -44,6 +46,7 @@ $(document).ready(function () {
             return
         }
         var result = parseFloat((billAmount * .15)).toFixed(2);
+        $("#tipPercent").text("15");
         $("#tipAmount").text(result);
         var totalBill = parseFloat(+billAmount + +result).toFixed(2);
         $("#billTotal").text(totalBill);
@@ -57,6 +60,7 @@ $(document).ready(function () {
             return
         }
         var result = parseFloat((billAmount * .2)).toFixed(2);
+        $("#tipPercent").text("20");
         $("#tipAmount").text(result);
         var totalBill = parseFloat(+billAmount + +result).toFixed(2);
         $("#billTotal").text(totalBill);
