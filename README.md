@@ -1,2 +1,2 @@
 # Tip Caculator
-Tip Calculator is a simple app designed to quickly and easily determine how much tip to leave. The app has preset percentages (10%, 15%, 20%), and users can also enter a custom percent. 
+Tips is a simple, lightweight tip calculator to help you quickly and easily determine how much tip to leave. The app has preset percentages (10%, 15%, 20%), and you can also enter a custom percent. 
