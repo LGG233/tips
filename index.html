@@ -31,10 +31,7 @@
                 <form id="math-part">
                     <div class="form-group">
                         <label for="billAmount">How much is the bill (in $)?</label>
-                        <input type="text" class="form-control" id="billAmount" placeholder="00.00" required>
-                        <div class="invalid-feedback">
-                            Please enter an amount
-                        </div>
+                        <input type="text" class="form-control" id="billAmount">
                     </div>
                     <div class="row btn-row">
                         <button id="tenPercent" type="submit" class="btn btn-primary percent">10%</button>
@@ -42,7 +39,7 @@
                         <button id="twentyPercent" type="submit" class="btn btn-primary percent">20%</button>
                     </div>
                     <div class="form-group">
-                        <label for="tipPercentage">Other amount - please enter percentage</label>
+                        <label for="tipPercentage">Other amount (in %)</label>
                         <input type="number" class="form-control" id="tipPercentage">
                     </div>
                     <!-- <br> -->
@@ -51,12 +48,11 @@
                     </div>
                 </form>
                 <br>
-                <div class="calculatedTip">Your tip is: <span id="tipAmount"></span>
+                <div class="calculatedTip">Your tip is: <span id="tipAmount">______</span>
                 </div>
                 <br>
-                <div class="billTotal">Your bill total is: <span id="billTotal"></span>
+                <div class="billTotal">Your bill total is: <span id="billTotal">______</span>
                 </div>
-                <br>
                 <button id="clearForm" type="submit" class="btn btn-primary">Reset</button>
             </div>
         </div>

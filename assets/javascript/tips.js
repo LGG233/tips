@@ -3,7 +3,17 @@ $(document).ready(function () {
     $("#calculateTip").on("click", function () {
         event.preventDefault();
         var billAmount = parseFloat($("#billAmount").val().trim()).toFixed(2);
+        console.log(billAmount)
+        if (billAmount === "NaN") {
+            console.log("error");
+            alert("Please enter the anount on the bill");
+            return
+        }
         var tipPercentage = parseInt($("#tipPercentage").val().trim());
+        if (tipPercentage === "NaN") {
+            alert("Please enter the percent you'd like to tip")
+            return
+        }
         var result = parseFloat((billAmount * (tipPercentage / 100))).toFixed(2);
         $("#tipAmount").text(result);
         var totalBill = parseFloat(+billAmount + +result).toFixed(2);
@@ -15,7 +25,11 @@ $(document).ready(function () {
     $("#tenPercent").on("click", function () {
         event.preventDefault();
         var billAmount = parseFloat($("#billAmount").val().trim()).toFixed(2);
-        // var tipPercentage = parseInt($("#tipPercentage").val().trim());
+        if (billAmount === "NaN") {
+            console.log("error");
+            alert("Please enter the anount on the bill");
+            return
+        }
         var result = parseFloat((billAmount * .1)).toFixed(2);
         $("#tipAmount").text(result);
         var totalBill = parseFloat(+billAmount + +result).toFixed(2);
@@ -24,7 +38,11 @@ $(document).ready(function () {
     $("#fifteenPercent").on("click", function () {
         event.preventDefault();
         var billAmount = parseFloat($("#billAmount").val().trim()).toFixed(2);
-        // var tipPercentage = parseInt($("#tipPercentage").val().trim());
+        if (billAmount === "NaN") {
+            console.log("error");
+            alert("Please enter the anount on the bill");
+            return
+        }
         var result = parseFloat((billAmount * .15)).toFixed(2);
         $("#tipAmount").text(result);
         var totalBill = parseFloat(+billAmount + +result).toFixed(2);
@@ -33,7 +51,11 @@ $(document).ready(function () {
     $("#twentyPercent").on("click", function () {
         event.preventDefault();
         var billAmount = parseFloat($("#billAmount").val().trim()).toFixed(2);
-        // var tipPercentage = parseInt($("#tipPercentage").val().trim());
+        if (billAmount === "NaN") {
+            console.log("error");
+            alert("Please enter the anount on the bill");
+            return
+        }
         var result = parseFloat((billAmount * .2)).toFixed(2);
         $("#tipAmount").text(result);
         var totalBill = parseFloat(+billAmount + +result).toFixed(2);
