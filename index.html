@@ -28,22 +28,24 @@
             <div class="col-lg-5 empty-space">
             </div>
             <div class="col-lg-2" id="calculate-space">
+                <br>
                 <form id="math-part">
                     <div class="form-group">
                         <label for="billAmount">How much is the bill (in $)?</label>
                         <input type="text" class="form-control" id="billAmount">
                     </div>
+                    <div class="form-group">
+                        <label for="tipPercentage">How much to tip (in %)?</label>
+                        <input type="number" class="form-control" id="tipPercentage">
+                    </div>
                     <div class="row btn-row">
                         <button id="tenPercent" type="submit" class="btn btn-primary percent">10%</button>
                         <button id="fifteenPercent" type="submit" class="btn btn-primary percent">15%</button>
                         <button id="twentyPercent" type="submit" class="btn btn-primary percent">20%</button>
-                    </div>
-                    <div class="form-group">
-                        <label for="tipPercentage">Other amount (in %)</label>
-                        <input type="number" class="form-control" id="tipPercentage">
+                        <button id="twentyFivePercent" type="submit" class="btn btn-primary percent">25%</button>
                     </div>
                     <!-- <br> -->
-                    <div class="row">
+                    <div class="row btn-row">
                         <button id="calculateTip" type="submit" class="btn btn-primary">Calculate Tip</button>
                     </div>
                 </form>

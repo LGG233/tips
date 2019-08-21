@@ -65,6 +65,20 @@ $(document).ready(function () {
         var totalBill = parseFloat(+billAmount + +result).toFixed(2);
         $("#billTotal").text(totalBill);
     })
+    $("#twentyFivePercent").on("click", function () {
+        event.preventDefault();
+        var billAmount = parseFloat($("#billAmount").val().trim()).toFixed(2);
+        if (billAmount === "NaN") {
+            console.log("error");
+            alert("Please enter the anount on the bill");
+            return
+        }
+        var result = parseFloat((billAmount * .25)).toFixed(2);
+        $("#tipPercent").text("25");
+        $("#tipAmount").text(result);
+        var totalBill = parseFloat(+billAmount + +result).toFixed(2);
+        $("#billTotal").text(totalBill);
+    })
 
 })
 
